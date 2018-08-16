@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PizzaMe</string>
+    <string name="base_url">https://query.yahooapis.com/v1/public/</string>
+</resources>
