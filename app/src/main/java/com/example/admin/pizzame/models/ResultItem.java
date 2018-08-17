@@ -1,10 +1,10 @@
 package com.example.admin.pizzame.models;
 
-import javax.annotation.Generated;
 import com.google.gson.annotations.SerializedName;
 
-@Generated("com.robohorse.robopojogenerator")
-public class ResultItem{
+import java.io.Serializable;
+
+public class ResultItem implements Serializable{
 
 	@SerializedName("MapUrl")
 	private String mapUrl;
@@ -12,8 +12,8 @@ public class ResultItem{
 	@SerializedName("Address")
 	private String address;
 
-	@SerializedName("Categories")
-	private Categories categories;
+	//@SerializedName("Categories")
+	//private Categories categories;
 
 	@SerializedName("ClickUrl")
 	private String clickUrl;
@@ -73,13 +73,13 @@ public class ResultItem{
 		return address;
 	}
 
-	public void setCategories(Categories categories){
+	/*public void setCategories(Categories categories){
 		this.categories = categories;
 	}
 
 	public Categories getCategories(){
 		return categories;
-	}
+	}*/
 
 	public void setClickUrl(String clickUrl){
 		this.clickUrl = clickUrl;
@@ -199,7 +199,7 @@ public class ResultItem{
 			"ResultItem{" + 
 			"mapUrl = '" + mapUrl + '\'' + 
 			",address = '" + address + '\'' + 
-			",categories = '" + categories + '\'' + 
+			//",categories = '" + categories + '\'' +
 			",clickUrl = '" + clickUrl + '\'' + 
 			",rating = '" + rating + '\'' + 
 			",title = '" + title + '\'' + 

@@ -1,10 +1,10 @@
 package com.example.admin.pizzame.models;
 
-import javax.annotation.Generated;
 import com.google.gson.annotations.SerializedName;
 
-@Generated("com.robohorse.robopojogenerator")
-public class Rating{
+import java.io.Serializable;
+
+public class Rating implements Serializable{
 
 	@SerializedName("TotalRatings")
 	private String totalRatings;
@@ -16,10 +16,10 @@ public class Rating{
 	private String totalReviews;
 
 	@SerializedName("LastReviewIntro")
-	private String lastReviewIntro;
+	private Object lastReviewIntro;
 
 	@SerializedName("LastReviewDate")
-	private String lastReviewDate;
+	private Object lastReviewDate;
 
 	public void setTotalRatings(String totalRatings){
 		this.totalRatings = totalRatings;
@@ -45,19 +45,19 @@ public class Rating{
 		return totalReviews;
 	}
 
-	public void setLastReviewIntro(String lastReviewIntro){
+	public void setLastReviewIntro(Object lastReviewIntro){
 		this.lastReviewIntro = lastReviewIntro;
 	}
 
-	public String getLastReviewIntro(){
+	public Object getLastReviewIntro(){
 		return lastReviewIntro;
 	}
 
-	public void setLastReviewDate(String lastReviewDate){
+	public void setLastReviewDate(Object lastReviewDate){
 		this.lastReviewDate = lastReviewDate;
 	}
 
-	public String getLastReviewDate(){
+	public Object getLastReviewDate(){
 		return lastReviewDate;
 	}
 

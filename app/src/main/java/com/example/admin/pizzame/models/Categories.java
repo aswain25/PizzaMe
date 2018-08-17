@@ -1,10 +1,8 @@
-package com.example.admin.pizzame.models;
+/*package com.example.admin.pizzame.models;
 
 import java.util.List;
-import javax.annotation.Generated;
 import com.google.gson.annotations.SerializedName;
 
-@Generated("com.robohorse.robopojogenerator")
 public class Categories{
 
 	@SerializedName("Category")
@@ -25,4 +23,4 @@ public class Categories{
 			"category = '" + category + '\'' + 
 			"}";
 		}
-}
+}*/
